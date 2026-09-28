@@ -156,6 +156,8 @@
 .dj-slide.is-on .dj-hero-copy > :nth-child(2) { transition-delay: .15s; }
 .dj-slide.is-on .dj-hero-copy > :nth-child(3) { transition-delay: .3s; }
 .dj-hero-copy .dj-sub { max-width: 640px; }
+/* On a film the hero pairs as the film carousel does: white title, grey line. */
+.dj-hero .is-dark .dj-sub { color: var(--t3); }
 
 /* Three dots, bottom right on the wrap's edge (clear of the fixed design system
    launcher, which sits on the viewport's edge). The live dot opens into a pill
