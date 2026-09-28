@@ -284,7 +284,15 @@
       if (!d || !isFinite(d)) return DWELL_FILM;
       return Math.ceil(DWELL_FILM / (d * 1000)) * d * 1000;
     }
-    function dwellOf(i) { return slides[i].classList.contains('pdp-slide--film') ? filmDwell() : DWELL_STILL; }
+    /* A clip slide is one film with no finish behind it: it stays up for one
+       whole run of itself, so the move never cuts a shot in half. */
+    function clipOf(i) { return slides[i].classList.contains('pdp-slide--clip') ? $('video', slides[i]) : null; }
+    function dwellOf(i) {
+      if (slides[i].classList.contains('pdp-slide--film')) return filmDwell();
+      var c = clipOf(i);
+      if (c) return c.duration && isFinite(c.duration) ? c.duration * 1000 : DWELL_FILM;
+      return DWELL_STILL;
+    }
     /* True while the film slide is up but its clip has not started: the
        countdown waits, and the dot's fill waits with it. */
     var waiting = false;
@@ -373,6 +381,20 @@
           }
         })(films[i]);
       }
+      /* The clip slides: the current one plays from the top, the one leaving
+         is paused after its slide out, the same courtesy the film gets. */
+      for (var j = 0; j < n; j++) {
+        (function (k) {
+          var c = clipOf(k);
+          if (!c) return;
+          if (k === cur) {
+            try { c.currentTime = 0; } catch (e) {}
+            if (!held && !still.matches) { try { c.play(); } catch (e) {} }
+          } else if (!c.paused) {
+            setTimeout(function () { if (cur !== k) { try { c.pause(); } catch (e) {} } }, FADE + 200);
+          }
+        })(j);
+      }
     }
     function run(f) {
       currentFinish = f;
@@ -394,6 +416,11 @@
       if (v) {
         if (held) { try { v.pause(); } catch (e) {} }
         else if (slides[cur].classList.contains('pdp-slide--film')) { try { v.play(); } catch (e) {} }
+      }
+      var c = clipOf(cur);
+      if (c) {
+        if (held) { try { c.pause(); } catch (e) {} }
+        else { try { c.play(); } catch (e) {} }
       }
       paintHold();
       sync();
