@@ -223,6 +223,7 @@
    inside it. */
 .pdp .pdp-gal { display: grid; gap: 12px; }
 
+.pdp .pdp-slide[hidden] { display: none !important; }
 .pdp .pdp-gal-main {
   position: relative;
   aspect-ratio: 4 / 5;

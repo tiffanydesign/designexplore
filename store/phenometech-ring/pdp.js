@@ -96,23 +96,23 @@
      the film's tag, in the cart line, above the swatch row), so a bare "Black"
      never appears on its own. */
   var FINISHES = [
-    { id: 'metal-black',    name: 'Black',          mat: 'metal',   clip: 'graphite',
+    { id: 'metal-black',    name: 'Black',          mat: 'metal',   clip: '',
       hi: '#b4b3b2', body: '#4a4b4a', sh: '#101110', rim: '#6d6e6d' },
     { id: 'metal-silver',   name: 'Silver',         mat: 'metal',   clip: 'silver',
       hi: '#ffffff', body: '#b4b5b9', sh: '#4e5055', rim: '#e8e8ea' },
-    { id: 'metal-brushed',  name: 'Brushed silver', mat: 'metal',   clip: 'silver',
+    { id: 'metal-brushed',  name: 'Brushed silver', mat: 'metal',   clip: '',
       hi: '#dfdee0', body: '#9d9c9f', sh: '#5c5d61', rim: '#c6c5c7' },
     { id: 'matte-rose',     name: 'Rose',           mat: 'matte',   clip: 'blush',
       hi: '#fbd3cf', body: '#d3aba6', sh: '#8f6560', rim: '#eec4bf' },
-    { id: 'matte-stealth',  name: 'Stealth black',  mat: 'matte',   clip: 'graphite',
+    { id: 'matte-stealth',  name: 'Stealth black',  mat: 'matte',   clip: '',
       hi: '#82817f', body: '#484948', sh: '#151614', rim: '#5e5f5d' },
-    { id: 'ceramic-black',  name: 'Black',          mat: 'ceramic', clip: 'graphite',
+    { id: 'ceramic-black',  name: 'Black',          mat: 'ceramic', clip: '',
       hi: '#7e8996', body: '#15171b', sh: '#000000', rim: '#3d444e' },
     { id: 'ceramic-silver', name: 'Silver',         mat: 'ceramic', clip: 'silver',
       hi: '#ffffff', body: '#bcbfc6', sh: '#6d7179', rim: '#dcdee4' },
     { id: 'ceramic-pink',   name: 'Pink',           mat: 'ceramic', clip: 'blush',
       hi: '#fff7f9', body: '#f0c8ce', sh: '#b4868f', rim: '#f6dade' },
-    { id: 'ceramic-white',  name: 'White',          mat: 'ceramic', clip: 'white',
+    { id: 'ceramic-white',  name: 'White',          mat: 'ceramic', clip: '',
       hi: '#ffffff', body: '#dbe0e8', sh: '#98a1b0', rim: '#e4e9f1' }
   ];
   var MATERIALS = {
@@ -213,24 +213,62 @@
     /* ---- pagination, built rather than shipped: without the script there is
        nothing for it to drive. */
     var dots = [];
+    var dotBox = null;
     var CHEV = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-    if (navBox && n > 1) {
+    if (navBox) {
       navBox.innerHTML =
         '<button class="pdp-gal-arrow" type="button" data-gal-prev="" aria-label="Previous slide">' + CHEV + '</button>' +
         '<div class="pdp-gal-dots"></div>' +
         '<button class="pdp-gal-arrow" type="button" data-gal-next="" aria-label="Next slide">' +
           CHEV.replace('M15 5l-7 7 7 7', 'M9 5l7 7-7 7') + '</button>';
-      var dotBox = $('.pdp-gal-dots', navBox);
+      dotBox = $('.pdp-gal-dots', navBox);
+    }
+    /* One dot per slide IN THE CURRENT SET: rebuilt whenever the finish
+       changes the set (see `filter` below). */
+    function buildDots() {
+      dots = [];
+      if (!dotBox) return;
+      dotBox.innerHTML = '';
       for (var d = 0; d < n; d++) {
         var b = doc.createElement('button');
         b.type = 'button';
         b.className = 'pdp-gal-dot';
         b.setAttribute('aria-label', 'Show slide ' + (d + 1) + ' of ' + n);
         b.innerHTML = '<i></i>';
+        (function (k) { on(b, 'click', function () { go(k); }); })(d);
         dotBox.appendChild(b);
         dots.push(b);
       }
-      navBox.hidden = false;
+      navBox.hidden = n < 2;
+    }
+
+    /* FINISH-SCOPED SLIDES (2026-09-29, user rule): a slide that shows one
+       particular ring says so in `data-for` (a space separated list of finish
+       ids) and is in the slideshow only while one of those finishes is chosen.
+       A slide with no `data-for` is for every finish. So a reader who picks
+       ceramic pink never sees a silver ring, and never sees a colour the range
+       does not sell. `all` keeps the DOM order; `slides` is the live subset. */
+    var all = slides.slice();
+    var filteredFor = null;
+    function filter(fid) {
+      filteredFor = fid;
+      slides = [];
+      for (var a = 0; a < all.length; a++) {
+        var list = all[a].getAttribute('data-for');
+        var keep = !list || (' ' + list + ' ').indexOf(' ' + fid + ' ') > -1;
+        all[a].hidden = !keep;
+        if (keep) slides.push(all[a]);
+        else {
+          var v = $('video', all[a]);
+          if (v && !v.paused) { try { v.pause(); } catch (e) {} }
+        }
+      }
+      n = slides.length;
+      for (var k = 0; k < n; k++) slides[k].setAttribute('aria-label', (k + 1) + ' of ' + n);
+      cur = 0;
+      gallery.slides = slides;
+      buildDots();
+      place(-1, 0);
     }
 
     /* ---- position. Each slide sits at its shortest wrapped offset from the
@@ -434,9 +472,6 @@
     /* ---- the reader's hands on the frame */
     on($('[data-gal-prev]', main), 'click', function () { go(cur - 1, -1); });
     on($('[data-gal-next]', main), 'click', function () { go(cur + 1, 1); });
-    for (var q = 0; q < dots.length; q++) {
-      (function (k) { on(dots[k], 'click', function () { go(k); }); })(q);
-    }
     on(main, 'keydown', function (e) {
       if (e.key === 'ArrowLeft') { e.preventDefault(); go(cur - 1, -1); }
       else if (e.key === 'ArrowRight') { e.preventDefault(); go(cur + 1, 1); }
@@ -472,7 +507,7 @@
     }
     on(doc, 'visibilitychange', sync);
 
-    place(-1, 0);
+    filter(state.finish);
     paintHold();
     sync();
     restartDwell();
@@ -481,16 +516,12 @@
     gallery.current = function () { return cur; };
     gallery.slides = slides;
 
-    var booted = false;
     subscribe(function (s) {
       var f = finishById(s.finish);
-      /* A new finish returns the frame to its film. Not on boot: the first
-         publish() only paints the initial state. */
-      var changed = booted && f !== currentFinish;
-      booted = true;
       currentFinish = f;
-      if (changed && cur !== 0) go(0, -1);
-      else if (changed) restartDwell();
+      /* A new finish swaps the slide set and returns the frame to its first
+         slide, which is the film where this finish has one. */
+      if (f.id !== filteredFor) { filter(f.id); restartDwell(); }
       run(f);
 
       for (var i = 0; i < frames.length; i++) {
@@ -558,6 +589,8 @@
     function collect() {
       items = [];
       for (var i = 0; i < slides.length; i++) {
+        /* Slides for other finishes are hidden, and are not in the overlay. */
+        if (slides[i].hidden) continue;
         var film = $('video.on', slides[i]) || $('video', slides[i]);
         if (film) {
           items.push({ kind: 'video', el: film, cap: film.getAttribute('aria-label') || '' });
