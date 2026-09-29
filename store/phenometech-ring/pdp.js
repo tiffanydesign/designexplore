@@ -98,7 +98,7 @@
   var FINISHES = [
     { id: 'metal-black',    name: 'Black',          mat: 'metal',   clip: '',
       hi: '#b4b3b2', body: '#4a4b4a', sh: '#101110', rim: '#6d6e6d' },
-    { id: 'metal-silver',   name: 'Silver',         mat: 'metal',   clip: 'silver',
+    { id: 'metal-silver',   name: 'Silver',         mat: 'metal',   clip: '',
       hi: '#ffffff', body: '#b4b5b9', sh: '#4e5055', rim: '#e8e8ea' },
     { id: 'metal-brushed',  name: 'Brushed silver', mat: 'metal',   clip: '',
       hi: '#dfdee0', body: '#9d9c9f', sh: '#5c5d61', rim: '#c6c5c7' },
@@ -108,7 +108,7 @@
       hi: '#82817f', body: '#484948', sh: '#151614', rim: '#5e5f5d' },
     { id: 'ceramic-black',  name: 'Black',          mat: 'ceramic', clip: '',
       hi: '#7e8996', body: '#15171b', sh: '#000000', rim: '#3d444e' },
-    { id: 'ceramic-silver', name: 'Silver',         mat: 'ceramic', clip: 'silver',
+    { id: 'ceramic-silver', name: 'Silver',         mat: 'ceramic', clip: '',
       hi: '#ffffff', body: '#bcbfc6', sh: '#6d7179', rim: '#dcdee4' },
     { id: 'ceramic-pink',   name: 'Pink',           mat: 'ceramic', clip: 'blush',
       hi: '#fff7f9', body: '#f0c8ce', sh: '#b4868f', rim: '#f6dade' },
