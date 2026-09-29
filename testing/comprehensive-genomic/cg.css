@@ -547,6 +547,16 @@
 .cgp .cg-kit:first-child .cg-kit-img img { object-position: 50% 55%; }
 .cgp .cg-kit:last-child .cg-kit-img img { object-position: 50% 40%; }
 .cgp .cg-kit-body { align-self: center; padding: 16px 20px 16px 12px; }
+/* Two cards side by side leave each photo a ~190px column beside a list, a
+   1:2.5 strip that crops any product shot to a sliver (user, 2026-09-29).
+   While the cards share a row the photo sits on top at 3:2 instead. */
+@media (min-width: 1181px) {
+  .cgp .cg-kit { grid-template-columns: minmax(0, 1fr); align-content: start; }
+  .cgp .cg-kit-img { aspect-ratio: 3 / 2; min-height: 0; }
+  .cgp .cg-kit:first-child .cg-kit-img img { object-position: 50% 50%; }
+  .cgp .cg-kit:last-child .cg-kit-img img { object-position: 50% 28%; }
+  .cgp .cg-kit-body { align-self: start; padding: 12px 16px 8px; }
+}
 .cgp .cg-kit h3 { margin: 0; font-size: clamp(22px, 1.8vw, 27px); line-height: 1.2; letter-spacing: -.015em; font-weight: 500; color: var(--cg-navy); }
 .cgp .cg-kit-sub { margin: 6px 0 0; font-size: 16px; line-height: 1.45; color: var(--cg-ink); }
 .cgp .cg-kit ul { margin: 20px 0 0; padding: 0; }
@@ -755,21 +765,30 @@
    THE BAND LADDER, 2026-09-26 (user rule for every test and supplement buy
    page: sizes and the two tone headline as on devices/band). One block at the
    END of the sheet so it wins over every earlier rung without touching them.
-   The one line product name (.cg-name, 24 to 30px) is the user's own ruling
-   of 2026-09-25 and stays as it is.
+   The product name was held to one 24 to 30px line on 2026-09-25; on
+   2026-09-29 the user asked for the whole buy column at the Band's sizes, so
+   it now takes .bd-name's rung and may wrap to two lines.
    ======================================================================== */
 .cgp .ph-display, .cg-steps .ph-display { font-size: clamp(40px, 5.6vw, 84px); }
 .cgp .ph-display.is-left { max-width: 20ch; }
 .cgp .cg-ess .cg-ess-h, .cgp .cg-ess-h { font-size: clamp(40px, 5.6vw, 84px); }
 .cgp .cg-end-h { font-size: clamp(38px, 4.6vw, 70px); }
+/* Buy column, rung for rung with devices/band (2026-09-29): name = .bd-name,
+   chip = .bd-opt-v, copy = .bd-lede, small print = the band's 15/16 notes. */
+.cgp .cg-name {
+  font-size: clamp(32px, 3.2vw, 48px); line-height: 1.04; font-weight: 600;
+  letter-spacing: -0.02em;
+}
 .cgp .cg-badge { font-size: 16px; }
-.cgp .cg-rate, .cgp .cg-rate a { font-size: 16px; }
-.cgp .cg-hero-lede { font-size: 19px; }
+.cgp .cg-rate, .cgp .cg-rate a { font-size: 15px; }
+.cgp .cg-hero-lede { font-size: 17px; line-height: 1.55; }
 .cgp .cg-stat-v { font-size: 23px; }
-.cgp .cg-stat-l { font-size: 16px; }
+.cgp .cg-stat-l { font-size: 15px; }
 .cgp .cg-price { font-size: 36px; }
-.cgp .cg-ticks li { font-size: 17px; }
+.cgp .cg-pnote { font-size: 15px; }
+.cgp .cg-ticks li { font-size: 16px; line-height: 1.5; }
 .cgp .cg-note { font-size: 16px; }
+.cgp .cg-buy-acc .cg-acc-body, .cgp .cg-buy-acc .cg-acc-body p, .cgp .cg-buy-acc .cg-acc-body li { font-size: 16px; line-height: 1.5; }
 .cgp .cg-ess-panel h3 { font-size: clamp(19px, 1.6vw, 23px); }
 .cgp .cg-ess-panel p { font-size: 17px; line-height: 1.5; }
 .cgp .ph-tl-step-h { font-size: clamp(19px, 1.5vw, 23px); }
