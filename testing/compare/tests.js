@@ -27,7 +27,7 @@
    "name": "Comprehensive Genomic Test",
    "cat": "Genetic testing",
    "price": "£650",
-   "buy": "/phenome-store/testing/comprehensive-genomic/",
+   "buy": "/tocstore/testing/comprehensive-genomic/",
    "alt": "The Comprehensive Genomic Test collection kit",
    "spec": {
     "sample": [
@@ -73,15 +73,15 @@
     "Mitochondrial and energy function",
     "Detoxification and environmental response"
    ],
-   "img": "/phenome-store/assets/testing/compare/kit-genomic.webp",
-   "thumb": "/phenome-store/assets/testing/compare/kit-genomic_t.webp"
+   "img": "/tocstore/assets/testing/compare/kit-genomic.webp",
+   "thumb": "/tocstore/assets/testing/compare/kit-genomic_t.webp"
   },
   {
    "id": "gut",
    "name": "Gut Microbiome Test",
    "cat": "Microbiome testing",
    "price": "£180",
-   "buy": "/phenome-store/testing/gut-microbiome/",
+   "buy": "/tocstore/testing/gut-microbiome/",
    "alt": "The Gut Microbiome Test collection kit",
    "spec": {
     "sample": [
@@ -130,15 +130,15 @@
     "Weight management",
     "Personalised recommendations"
    ],
-   "img": "/phenome-store/assets/testing/compare/kit-gut.webp",
-   "thumb": "/phenome-store/assets/testing/compare/kit-gut_t.webp"
+   "img": "/tocstore/assets/testing/compare/kit-gut.webp",
+   "thumb": "/tocstore/assets/testing/compare/kit-gut_t.webp"
   },
   {
    "id": "carrier",
    "name": "Carrier Screening Test",
    "cat": "Genetic testing",
    "price": "£390",
-   "buy": "/phenome-store/testing/carrier-screening/",
+   "buy": "/tocstore/testing/carrier-screening/",
    "alt": "The Carrier Screening Test collection kit",
    "spec": {
     "sample": [
@@ -179,15 +179,15 @@
     "Residual risk explanation",
     "Glossary and scientific notes"
    ],
-   "img": "/phenome-store/assets/testing/compare/kit-carrier.webp",
-   "thumb": "/phenome-store/assets/testing/compare/kit-carrier_t.webp"
+   "img": "/tocstore/assets/testing/compare/kit-carrier.webp",
+   "thumb": "/tocstore/assets/testing/compare/kit-carrier_t.webp"
   },
   {
    "id": "newborn",
    "name": "Newborn Screening Test",
    "cat": "Genetic testing",
    "price": "£295",
-   "buy": "/phenome-store/testing/newborn-screening/",
+   "buy": "/tocstore/testing/newborn-screening/",
    "alt": "The Newborn Screening Test collection kit",
    "spec": {
     "sample": [
@@ -227,15 +227,15 @@
     "Residual risk",
     "Glossary and scientific notes"
    ],
-   "img": "/phenome-store/assets/testing/compare/kit-newborn.webp",
-   "thumb": "/phenome-store/assets/testing/compare/kit-newborn_t.webp"
+   "img": "/tocstore/assets/testing/compare/kit-newborn.webp",
+   "thumb": "/tocstore/assets/testing/compare/kit-newborn_t.webp"
   },
   {
    "id": "sports",
    "name": "Sports Performance Test",
    "cat": "Genetic testing",
    "price": "£220",
-   "buy": "/phenome-store/testing/sports-performance/",
+   "buy": "/tocstore/testing/sports-performance/",
    "alt": "The Sports Performance Test collection kit",
    "spec": {
     "sample": [
@@ -279,15 +279,15 @@
     "Mental focus and sleep recovery",
     "Tailored training and nutrition guidance"
    ],
-   "img": "/phenome-store/assets/testing/compare/kit-sports.webp",
-   "thumb": "/phenome-store/assets/testing/compare/kit-sports_t.webp"
+   "img": "/tocstore/assets/testing/compare/kit-sports.webp",
+   "thumb": "/tocstore/assets/testing/compare/kit-sports_t.webp"
   },
   {
    "id": "oral",
    "name": "Oral Microbiome Test",
    "cat": "Microbiome testing",
    "price": "£150",
-   "buy": "/phenome-store/testing/oral-microbiome/",
+   "buy": "/tocstore/testing/oral-microbiome/",
    "alt": "The Oral Microbiome Test collection kit",
    "spec": {
     "sample": [
@@ -329,8 +329,8 @@
     "Protective and harmful species",
     "Personalised recommendations"
    ],
-   "img": "/phenome-store/assets/testing/compare/kit-oral.webp",
-   "thumb": "/phenome-store/assets/testing/compare/kit-oral_t.webp"
+   "img": "/tocstore/assets/testing/compare/kit-oral.webp",
+   "thumb": "/tocstore/assets/testing/compare/kit-oral_t.webp"
   }
  ],
  "groups": [
@@ -441,7 +441,7 @@
   "Training, and the recovery after it": "dumbbell",
   "Gum health, breath and the heart": "heart"
  },
- "sprite": "/phenome-store/assets/icons/compare.svg#"
+ "sprite": "/tocstore/assets/icons/compare.svg#"
 };
 
   var heads = document.querySelector('[data-heads]');

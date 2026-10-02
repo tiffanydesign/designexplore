@@ -7,7 +7,7 @@
     var favicon = document.createElement('link');
     favicon.rel = 'icon';
     favicon.type = 'image/png';
-    favicon.href = '/phenome-store/assets/brand/favicon.png';
+    favicon.href = '/tocstore/assets/brand/favicon.png';
     document.head.appendChild(favicon);
   }
 
@@ -28,41 +28,41 @@
     {
       "key": "store",
       "trigger": "Store",
-      "href": "/phenome-store/store/",
+      "href": "/tocstore/store/",
       "columns": [
         {
           "title": "Explore store",
           "lead": true,
           "links": [
-            { "label": "Shop all", "href": "/phenome-store/store/" },
-            { "label": "Genetic tests", "href": "/phenome-store/testing/genetic/" },
-            { "label": "Microbiome tests", "href": "/phenome-store/testing/microbiome/" },
-            { "label": "Supplements", "href": "/phenome-store/store/supplements/" },
-            { "label": "PhenomeTech Ring", "href": "/phenome-store/devices/ring/" },
-            { "label": "PhenomeTech Band", "href": "/phenome-store/devices/band/" }
+            { "label": "Shop all", "href": "/tocstore/store/" },
+            { "label": "Genetic tests", "href": "/tocstore/testing/genetic/" },
+            { "label": "Microbiome tests", "href": "/tocstore/testing/microbiome/" },
+            { "label": "Supplements", "href": "/tocstore/store/supplements/" },
+            { "label": "PhenomeTech Ring", "href": "/tocstore/devices/ring/" },
+            { "label": "PhenomeTech Band", "href": "/tocstore/devices/band/" }
           ]
         },
         {
           "title": "Quick links",
           "links": [
-            { "label": "Track order", "href": "/phenome-store/account/orders/" },
-            { "label": "Activate a kit", "href": "/phenome-store/account/activate/" },
-            { "label": "Shipping and returns", "href": "/phenome-store/devices/ring/warranty-returns/" },
-            { "label": "Contact us", "href": "/phenome-store/contact/" }
+            { "label": "Track order", "href": "/tocstore/account/orders/" },
+            { "label": "Activate a kit", "href": "/tocstore/account/activate/" },
+            { "label": "Shipping and returns", "href": "/tocstore/devices/ring/warranty-returns/" },
+            { "label": "Contact us", "href": "/tocstore/contact/" }
           ]
         }
       ],
       /* Store is the one panel with three cards, one per range: ring, test, supplement. */
       "featured": [
         { "name": "PhenomeTech Ring", "price": "from £179", "tag": "New",
-          "href": "/phenome-store/store/phenometech-ring/",
-          "img": "/phenome-store/assets/menu/tile-store-ring.webp" },
+          "href": "/tocstore/store/phenometech-ring/",
+          "img": "/tocstore/assets/menu/tile-store-ring.webp" },
         { "name": "Comprehensive Genomic Test", "price": "£650", "tag": "Popular",
-          "href": "/phenome-store/testing/comprehensive-genomic/",
-          "img": "/phenome-store/assets/menu/tile-testing-genetic.webp" },
+          "href": "/tocstore/testing/comprehensive-genomic/",
+          "img": "/tocstore/assets/menu/tile-testing-genetic.webp" },
         { "name": "NAD+", "price": "", "tag": "Popular",
-          "href": "/phenome-store/supplements/nad/",
-          "img": "/phenome-store/assets/menu/tile-supp-nad.webp" }
+          "href": "/tocstore/supplements/nad/",
+          "img": "/tocstore/assets/menu/tile-supp-nad.webp" }
       ]
     },
     {
@@ -75,8 +75,8 @@
           "title": "Explore testing",
           "lead": true,
           "links": [
-            { "label": "Genetic testing", "href": "/phenome-store/testing/genetic/" },
-            { "label": "Microbiome testing", "href": "/phenome-store/testing/microbiome/" }
+            { "label": "Genetic testing", "href": "/tocstore/testing/genetic/" },
+            { "label": "Microbiome testing", "href": "/tocstore/testing/microbiome/" }
           ]
         },
         {
@@ -84,53 +84,53 @@
              link to that category in the Shop all catalogue; every product row goes
              to its buy page (genomic lives under /testing/, the rest under /store/). */
           "title": "Shop genetic testing",
-          "href": "/phenome-store/store/#genetic-testing",
+          "href": "/tocstore/store/#genetic-testing",
           "links": [
-            { "label": "Comprehensive Genomic Test", "href": "/phenome-store/testing/comprehensive-genomic/" },
-            { "label": "Carrier Screening Test", "href": "/phenome-store/testing/carrier-screening/" },
-            { "label": "Newborn Screening Test", "href": "/phenome-store/testing/newborn-screening/", "note": "Sold out" },
-            { "label": "Sports Performance Test", "href": "/phenome-store/testing/sports-performance/" }
+            { "label": "Comprehensive Genomic Test", "href": "/tocstore/testing/comprehensive-genomic/" },
+            { "label": "Carrier Screening Test", "href": "/tocstore/testing/carrier-screening/" },
+            { "label": "Newborn Screening Test", "href": "/tocstore/testing/newborn-screening/", "note": "Sold out" },
+            { "label": "Sports Performance Test", "href": "/tocstore/testing/sports-performance/" }
           ]
         },
         {
           "title": "Shop microbiome testing",
-          "href": "/phenome-store/store/#microbiome-testing",
+          "href": "/tocstore/store/#microbiome-testing",
           "links": [
-            { "label": "Gut Microbiome Test", "href": "/phenome-store/testing/gut-microbiome/" },
-            { "label": "Oral Microbiome Test", "href": "/phenome-store/testing/oral-microbiome/" }
+            { "label": "Gut Microbiome Test", "href": "/tocstore/testing/gut-microbiome/" },
+            { "label": "Oral Microbiome Test", "href": "/tocstore/testing/oral-microbiome/" }
           ]
         },
         {
           "title": "Get tested",
           "links": [
-            { "label": "How testing works", "href": "/phenome-store/testing/how-it-works/" },
-            { "label": "Compare tests", "href": "/phenome-store/testing/compare/" },
-            { "label": "Activate a kit", "href": "/phenome-store/account/activate/" },
-            { "label": "Results and counselling", "href": "/phenome-store/app/results-and-reports/" },
-            { "label": "Whole genome sequencing", "href": "/phenome-store/science/whole-genome-sequencing/" }
+            { "label": "How testing works", "href": "/tocstore/testing/how-it-works/" },
+            { "label": "Compare tests", "href": "/tocstore/testing/compare/" },
+            { "label": "Activate a kit", "href": "/tocstore/account/activate/" },
+            { "label": "Results and counselling", "href": "/tocstore/app/results-and-reports/" },
+            { "label": "Whole genome sequencing", "href": "/tocstore/science/whole-genome-sequencing/" }
           ]
         }
       ],
       "featured": [
         { "name": "Comprehensive Genomic Test", "price": "£650", "tag": "Popular",
-          "href": "/phenome-store/testing/comprehensive-genomic/",
-          "img": "/phenome-store/assets/menu/tile-testing-genetic.webp" }
+          "href": "/tocstore/testing/comprehensive-genomic/",
+          "img": "/tocstore/assets/menu/tile-testing-genetic.webp" }
       ]
     },
     {
       "key": "supplements",
       "pin": true,
       "trigger": "Supplements",
-      "href": "/phenome-store/store/supplements/",
+      "href": "/tocstore/store/supplements/",
       "columns": [
         {
           /* The title is the door to the supplements explore page; Shop all opens
              the Shop all catalogue at its first supplements category. */
           "title": "Explore supplements",
-          "href": "/phenome-store/store/supplements/",
+          "href": "/tocstore/store/supplements/",
           "lead": true,
           "links": [
-            { "label": "Shop all", "href": "/phenome-store/store/#energy-and-cognition" }
+            { "label": "Shop all", "href": "/tocstore/store/#energy-and-cognition" }
           ]
         },
         {
@@ -139,40 +139,40 @@
              it is not drawn. Four product columns side by side, and no picture
              card: the fourth column takes the card's place (user, 2026-09-22). */
           "title": "Energy & Cognition",
-          "href": "/phenome-store/store/#energy-and-cognition",
+          "href": "/tocstore/store/#energy-and-cognition",
           "links": [
-            { "label": "Phenome+ NAD+", "href": "/phenome-store/supplements/nad/" },
-            { "label": "NAD+ Boost", "href": "/phenome-store/supplements/nad-boost/" },
-            { "label": "Gly-NAC", "href": "/phenome-store/supplements/gly-nac/" },
-            { "label": "Broccoli Complex", "href": "/phenome-store/supplements/broccoli-complex-capsules/" },
-            { "label": "Carnitine Performance+", "href": "/phenome-store/supplements/carnitine-performance/" }
+            { "label": "Phenome+ NAD+", "href": "/tocstore/supplements/nad/" },
+            { "label": "NAD+ Boost", "href": "/tocstore/supplements/nad-boost/" },
+            { "label": "Gly-NAC", "href": "/tocstore/supplements/gly-nac/" },
+            { "label": "Broccoli Complex", "href": "/tocstore/supplements/broccoli-complex-capsules/" },
+            { "label": "Carnitine Performance+", "href": "/tocstore/supplements/carnitine-performance/" }
           ]
         },
         {
           "title": "Immunity & Respiratory",
-          "href": "/phenome-store/store/#immunity-and-respiratory",
+          "href": "/tocstore/store/#immunity-and-respiratory",
           "links": [
-            { "label": "Sambucus Gummies", "href": "/phenome-store/supplements/sambucus-gummies/" },
-            { "label": "Throat Relief Lozenges", "href": "/phenome-store/supplements/throat-relief-lozenges/" },
-            { "label": "Propolis Throat Lozenges", "href": "/phenome-store/supplements/propolis-throat-lozenges/" },
-            { "label": "Pelargonium Throat Lozenges", "href": "/phenome-store/supplements/pelargonium-throat-lozenges/" },
-            { "label": "Quercetin Capsules", "href": "/phenome-store/supplements/quercetin-capsules/" }
+            { "label": "Sambucus Gummies", "href": "/tocstore/supplements/sambucus-gummies/" },
+            { "label": "Throat Relief Lozenges", "href": "/tocstore/supplements/throat-relief-lozenges/" },
+            { "label": "Propolis Throat Lozenges", "href": "/tocstore/supplements/propolis-throat-lozenges/" },
+            { "label": "Pelargonium Throat Lozenges", "href": "/tocstore/supplements/pelargonium-throat-lozenges/" },
+            { "label": "Quercetin Capsules", "href": "/tocstore/supplements/quercetin-capsules/" }
           ]
         },
         {
           "title": "Anti-Inflammatory",
-          "href": "/phenome-store/store/#anti-inflammatory",
+          "href": "/tocstore/store/#anti-inflammatory",
           "links": [
-            { "label": "Joint Boost Capsules", "href": "/phenome-store/supplements/joint-boost-capsules/" },
-            { "label": "FlexiCream", "href": "/phenome-store/supplements/flexicream/" },
-            { "label": "Bromelain Capsules", "href": "/phenome-store/supplements/bromelain-capsules/" }
+            { "label": "Joint Boost Capsules", "href": "/tocstore/supplements/joint-boost-capsules/" },
+            { "label": "FlexiCream", "href": "/tocstore/supplements/flexicream/" },
+            { "label": "Bromelain Capsules", "href": "/tocstore/supplements/bromelain-capsules/" }
           ]
         },
         {
           "title": "Skin & Beauty",
-          "href": "/phenome-store/store/#skin-and-beauty",
+          "href": "/tocstore/store/#skin-and-beauty",
           "links": [
-            { "label": "Multi-Collagen Powder", "href": "/phenome-store/supplements/multi-collagen-powder/" }
+            { "label": "Multi-Collagen Powder", "href": "/tocstore/supplements/multi-collagen-powder/" }
           ]
         }
       ]
@@ -181,7 +181,7 @@
       "key": "devices",
       "pin": true,
       "trigger": "Devices",
-      "href": "/phenome-store/store/devices/",
+      "href": "/tocstore/store/devices/",
       "columns": [
         /* Testing's arrangement (2026-09-22): lead doors, then one Shop column
            per device whose linked title opens its buy page and whose rows are the
@@ -191,141 +191,141 @@
           "title": "Explore devices",
           "lead": true,
           "links": [
-            { "label": "PhenomeTech Ring", "href": "/phenome-store/devices/ring/" },
-            { "label": "PhenomeTech Band", "href": "/phenome-store/devices/band/" }
+            { "label": "PhenomeTech Ring", "href": "/tocstore/devices/ring/" },
+            { "label": "PhenomeTech Band", "href": "/tocstore/devices/band/" }
           ]
         },
         {
           "title": "Shop the Ring",
-          "href": "/phenome-store/store/phenometech-ring/",
+          "href": "/tocstore/store/phenometech-ring/",
           "links": [
-            { "label": "Metal, from £179", "href": "/phenome-store/store/phenometech-ring/" },
-            { "label": "Matte, from £189", "href": "/phenome-store/store/phenometech-ring/" },
-            { "label": "Ceramic, from £199", "href": "/phenome-store/store/phenometech-ring/" }
+            { "label": "Metal, from £179", "href": "/tocstore/store/phenometech-ring/" },
+            { "label": "Matte, from £189", "href": "/tocstore/store/phenometech-ring/" },
+            { "label": "Ceramic, from £199", "href": "/tocstore/store/phenometech-ring/" }
           ]
         },
         {
           "title": "Shop the Band",
-          "href": "/phenome-store/devices/band/",
+          "href": "/tocstore/devices/band/",
           "links": [
-            { "label": "Sport silicone, £149", "href": "/phenome-store/devices/band/" },
-            { "label": "Woven nylon, £149", "href": "/phenome-store/devices/band/" }
+            { "label": "Sport silicone, £149", "href": "/tocstore/devices/band/" },
+            { "label": "Woven nylon, £149", "href": "/tocstore/devices/band/" }
           ]
         },
         {
           "title": "Get started",
           "links": [
-            { "label": "Compare materials", "href": "/phenome-store/devices/ring/compare-materials/" },
-            { "label": "Find your size", "href": "/phenome-store/devices/ring/find-your-size/" },
-            { "label": "How it works", "href": "/phenome-store/devices/ring/how-it-works/" },
-            { "label": "Warranty and returns", "href": "/phenome-store/devices/ring/warranty-returns/" }
+            { "label": "Compare materials", "href": "/tocstore/devices/ring/compare-materials/" },
+            { "label": "Find your size", "href": "/tocstore/devices/ring/find-your-size/" },
+            { "label": "How it works", "href": "/tocstore/devices/ring/how-it-works/" },
+            { "label": "Warranty and returns", "href": "/tocstore/devices/ring/warranty-returns/" }
           ]
         }
       ],
       "featured": [
         { "name": "Ring, Matte", "price": "from £189", "tag": "New",
-          "href": "/phenome-store/store/phenometech-ring/",
-          "img": "/phenome-store/assets/menu/tile-devices-ring-matte.webp" },
+          "href": "/tocstore/store/phenometech-ring/",
+          "img": "/tocstore/assets/menu/tile-devices-ring-matte.webp" },
         { "name": "Band, Woven nylon", "price": "£149", "tag": "New",
-          "href": "/phenome-store/devices/band/",
-          "img": "/phenome-store/assets/menu/tile-devices-band-woven.webp" }
+          "href": "/tocstore/devices/band/",
+          "img": "/tocstore/assets/menu/tile-devices-band-woven.webp" }
       ]
     },
     {
       "key": "app",
       "trigger": "App",
-      "href": "/phenome-store/app/",
+      "href": "/tocstore/app/",
       "columns": [
         {
           "title": "Explore app",
           "lead": true,
           "links": [
-            { "label": "Explore the app", "href": "/phenome-store/app/" },
-            { "label": "Your dashboard", "href": "/phenome-store/app/dashboard/" },
-            { "label": "Results and reports", "href": "/phenome-store/app/results-and-reports/" },
-            { "label": "Trends over time", "href": "/phenome-store/app/trends/" }
+            { "label": "Explore the app", "href": "/tocstore/app/" },
+            { "label": "Your dashboard", "href": "/tocstore/app/dashboard/" },
+            { "label": "Results and reports", "href": "/tocstore/app/results-and-reports/" },
+            { "label": "Trends over time", "href": "/tocstore/app/trends/" }
           ]
         },
         {
           "title": "Get started",
           "links": [
-            { "label": "Create an account", "href": "/phenome-store/account/" },
-            { "label": "Activate a kit", "href": "/phenome-store/account/activate/" },
-            { "label": "Book a session", "href": "/phenome-store/app/book-a-session/" }
+            { "label": "Create an account", "href": "/tocstore/account/" },
+            { "label": "Activate a kit", "href": "/tocstore/account/activate/" },
+            { "label": "Book a session", "href": "/tocstore/app/book-a-session/" }
           ]
         },
         {
           "title": "More from app",
           "links": [
-            { "label": "Privacy and your data", "href": "/phenome-store/legal/privacy.html" },
-            { "label": "App support", "href": "/phenome-store/contact/" }
+            { "label": "Privacy and your data", "href": "/tocstore/legal/privacy.html" },
+            { "label": "App support", "href": "/tocstore/contact/" }
           ]
         }
       ],
       "featured": [
         { "name": "See what the app tracks", "price": "", "tag": "Featured",
-          "href": "/phenome-store/app/",
-          "img": "/phenome-store/assets/menu/tile-app.webp" }
+          "href": "/tocstore/app/",
+          "img": "/tocstore/assets/menu/tile-app.webp" }
       ]
     },
     {
       "key": "science",
       "trigger": "Science",
-      "href": "/phenome-store/science/",
+      "href": "/tocstore/science/",
       "columns": [
         {
           "title": "Explore science",
           "lead": true,
           "links": [
-            { "label": "Our research", "href": "/phenome-store/science/our-research/" },
-            { "label": "Whole genome sequencing", "href": "/phenome-store/science/whole-genome-sequencing/" },
-            { "label": "Multiomics", "href": "/phenome-store/science/multiomics/" },
-            { "label": "Systems biology", "href": "/phenome-store/science/systems-biology/" },
-            { "label": "The Longevity Hub", "href": "/phenome-store/hub/" }
+            { "label": "Our research", "href": "/tocstore/science/our-research/" },
+            { "label": "Whole genome sequencing", "href": "/tocstore/science/whole-genome-sequencing/" },
+            { "label": "Multiomics", "href": "/tocstore/science/multiomics/" },
+            { "label": "Systems biology", "href": "/tocstore/science/systems-biology/" },
+            { "label": "The Longevity Hub", "href": "/tocstore/hub/" }
           ]
         },
         {
           "title": "About us",
           "links": [
-            { "label": "Meet the team", "href": "/phenome-store/about/" },
-            { "label": "Partner with us", "href": "/phenome-store/careers/" }
+            { "label": "Meet the team", "href": "/tocstore/about/" },
+            { "label": "Partner with us", "href": "/tocstore/careers/" }
           ]
         }
       ],
       "featured": [
         { "name": "Our research", "price": "", "tag": "Featured",
-          "href": "/phenome-store/science/our-research/",
-          "img": "/phenome-store/assets/menu/tile-science-research.webp" }
+          "href": "/tocstore/science/our-research/",
+          "img": "/tocstore/assets/menu/tile-science-research.webp" }
       ]
     },
     {
       "key": "support",
       "trigger": "Support",
-      "href": "/phenome-store/contact/",
+      "href": "/tocstore/contact/",
       "columns": [
         {
           "title": "Get help",
           "links": [
-            { "label": "FAQ", "href": "/phenome-store/help/" },
-            { "label": "Contact us", "href": "/phenome-store/contact/" },
-            { "label": "Track order", "href": "/phenome-store/account/orders/" },
-            { "label": "Activate a kit", "href": "/phenome-store/account/activate/" },
-            { "label": "Returns and refunds", "href": "/phenome-store/devices/ring/warranty-returns/" },
-            { "label": "Report a problem", "href": "/phenome-store/contact/" }
+            { "label": "FAQ", "href": "/tocstore/help/" },
+            { "label": "Contact us", "href": "/tocstore/contact/" },
+            { "label": "Track order", "href": "/tocstore/account/orders/" },
+            { "label": "Activate a kit", "href": "/tocstore/account/activate/" },
+            { "label": "Returns and refunds", "href": "/tocstore/devices/ring/warranty-returns/" },
+            { "label": "Report a problem", "href": "/tocstore/contact/" }
           ]
         },
         {
           "title": "Helpful topics",
           "links": [
-            { "label": "Ring sizing", "href": "/phenome-store/devices/ring/find-your-size/" },
-            { "label": "Privacy and your data", "href": "/phenome-store/legal/privacy.html" }
+            { "label": "Ring sizing", "href": "/tocstore/devices/ring/find-your-size/" },
+            { "label": "Privacy and your data", "href": "/tocstore/legal/privacy.html" }
           ]
         }
       ],
       "featured": [
         { "name": "Talk to our team", "price": "", "tag": "Featured",
-          "href": "/phenome-store/contact/",
-          "img": "/phenome-store/assets/menu/tile-support-contact.webp" }
+          "href": "/tocstore/contact/",
+          "img": "/tocstore/assets/menu/tile-support-contact.webp" }
       ]
     }
   ];
@@ -500,8 +500,8 @@
     nav.outerHTML =
       '<header class="ph-nav" id="phNav">' +
       '<div class="ph-nav-inner">' +
-      '<a class="ph-brand" href="/phenome-store/index.html" aria-label="Phenome Longevity, home">' +
-      '<img src="/phenome-store/assets/brand/phenome-logo.svg" alt="Phenome Longevity" width="770" height="118"></a>' +
+      '<a class="ph-brand" href="/tocstore/index.html" aria-label="Phenome Longevity, home">' +
+      '<img src="/tocstore/assets/brand/phenome-logo.svg" alt="Phenome Longevity" width="770" height="118"></a>' +
       /* The design's top row is seven: Store, Testing, Supplements, Devices, App,
          Science, Support. Clinic sits on the RIGHT as an outlined pill and
          Longevity Hub is not in the row at all — it is reached from the Science
@@ -520,16 +520,16 @@
       /* Still a real link to a real page. searchKit() below takes the click and opens
          the overlay instead; if that script never runs, the control still goes
          somewhere rather than sitting there doing nothing. */
-      '<a class="ph-nav-icon" data-ph-search href="/phenome-store/hub/search/" aria-label="Search">' +
+      '<a class="ph-nav-icon" data-ph-search href="/tocstore/hub/search/" aria-label="Search">' +
       '<svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none" ' +
       'stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="9" r="6"></circle>' +
       '<path d="M13.5 13.5 L18 18" stroke-linecap="round"></path></svg></a>' +
       /* Profile, 2026-09-22 by request: the icon only, onto the account page. */
-      '<a class="ph-nav-icon ph-nav-profile" href="/phenome-store/account/" aria-label="Your account">' +
+      '<a class="ph-nav-icon ph-nav-profile" href="/tocstore/account/" aria-label="Your account">' +
       '<svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none" ' +
       'stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="10" cy="6.6" r="3.4"></circle>' +
       '<path d="M3.6 17.6c.9-3.3 3.4-5.1 6.4-5.1s5.5 1.8 6.4 5.1"></path></svg></a>' +
-      '<a class="ph-nav-icon" href="/phenome-store/store/cart/" aria-label="Basket">' +
+      '<a class="ph-nav-icon" href="/tocstore/store/cart/" aria-label="Basket">' +
       '<svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none" ' +
       'stroke="currentColor" stroke-width="1.6"><path d="M4 6h12l-1 11H5L4 6Z" ' +
       'stroke-linejoin="round"></path><path d="M7.5 6a2.5 2.5 0 0 1 5 0" ' +
@@ -772,7 +772,7 @@
        the entire reason the block above exists. One owner per decision. */
     header.querySelectorAll('.ph-links a:not(.ph-trigger)').forEach(function (a) {
       var href = a.getAttribute('href');
-      if (href !== '/phenome-store/index.html' && path.indexOf(href) === 0) a.classList.add('active');
+      if (href !== '/tocstore/index.html' && path.indexOf(href) === 0) a.classList.add('active');
     });
   }
 
@@ -786,59 +786,59 @@
       '<p style="font-size:17px;line-height:25px;color:var(--ink);max-width:640px;margin:0 0 36px">Whole genome and microbiome testing for a longer, healthier life. At home, clinical grade, and built on the science.</p>' +
       '<div class="cols">' +
       '<div class="col"><div class="col-t">Testing</div>' +
-      '<a href="/phenome-store/testing/gut-microbiome/">Gut Microbiome</a>' +
-      '<a href="/phenome-store/testing/oral-microbiome/">Oral Microbiome</a>' +
-      '<a href="/phenome-store/testing/comprehensive-genomic/">Comprehensive Genomic</a>' +
-      '<a href="/phenome-store/testing/carrier-screening/">Carrier Screening</a>' +
-      '<a href="/phenome-store/testing/newborn-screening/">Newborn Screening</a>' +
-      '<a href="/phenome-store/testing/sports-performance/">Sports Performance</a>' +
-      '<a href="/phenome-store/testing/microbiome/">Microbiome testing</a>' +
-      '<a href="/phenome-store/testing/genetic/">Genetic testing</a></div>' +
+      '<a href="/tocstore/testing/gut-microbiome/">Gut Microbiome</a>' +
+      '<a href="/tocstore/testing/oral-microbiome/">Oral Microbiome</a>' +
+      '<a href="/tocstore/testing/comprehensive-genomic/">Comprehensive Genomic</a>' +
+      '<a href="/tocstore/testing/carrier-screening/">Carrier Screening</a>' +
+      '<a href="/tocstore/testing/newborn-screening/">Newborn Screening</a>' +
+      '<a href="/tocstore/testing/sports-performance/">Sports Performance</a>' +
+      '<a href="/tocstore/testing/microbiome/">Microbiome testing</a>' +
+      '<a href="/tocstore/testing/genetic/">Genetic testing</a></div>' +
       '<div class="col"><div class="col-t">Shop</div>' +
-      '<a href="/phenome-store/devices/ring/">PhenomeTech Ring</a>' +
-      '<a href="/phenome-store/supplements/">Supplements</a>' +
-      '<a href="/phenome-store/store/">Shop all</a>' +
-      '<a href="/phenome-store/store/microbiome/">Microbiome</a>' +
-      '<a href="/phenome-store/store/genetic/">Genetic</a>' +
-      '<a href="/phenome-store/store/devices/">Devices</a>' +
-      '<a href="/phenome-store/store/supplements/">Supplements</a>' +
-      '<a href="/phenome-store/store/cart/">Your bag</a>' +
-      '<a href="/phenome-store/store/checkout/">Checkout</a></div>' +
+      '<a href="/tocstore/devices/ring/">PhenomeTech Ring</a>' +
+      '<a href="/tocstore/supplements/">Supplements</a>' +
+      '<a href="/tocstore/store/">Shop all</a>' +
+      '<a href="/tocstore/store/microbiome/">Microbiome</a>' +
+      '<a href="/tocstore/store/genetic/">Genetic</a>' +
+      '<a href="/tocstore/store/devices/">Devices</a>' +
+      '<a href="/tocstore/store/supplements/">Supplements</a>' +
+      '<a href="/tocstore/store/cart/">Your bag</a>' +
+      '<a href="/tocstore/store/checkout/">Checkout</a></div>' +
       '<div class="col"><div class="col-t">Explore</div>' +
-      '<a href="/phenome-store/science/">Science</a>' +
-      '<a href="/phenome-store/science/whole-genome-sequencing/">Whole genome sequencing</a>' +
-      '<a href="/phenome-store/science/multiomics/">Multiomics</a>' +
-      '<a href="/phenome-store/science/systems-biology/">Systems biology</a>' +
-      '<a href="/phenome-store/science/our-research/">Our research</a>' +
-      '<a href="/phenome-store/app/">The App</a>' +
-      '<a href="/phenome-store/app/#longevity-ai">Longevity AI</a>' +
-      '<a href="/phenome-store/hub/">Longevity Hub</a>' +
-      '<a href="/phenome-store/hub/podcast/">The Longevity Seat</a>' +
-      '<a href="/phenome-store/hub/gut-guide/">The gut health guide</a>' +
-      '<a href="/phenome-store/app/dashboard/">Your dashboard</a>' +
-      '<a href="/phenome-store/app/results-and-reports/">Results and reports</a>' +
-      '<a href="/phenome-store/app/trends/">Trends over time</a>' +
-      '<a href="/phenome-store/app/book-a-session/">Book a session</a></div>' +
+      '<a href="/tocstore/science/">Science</a>' +
+      '<a href="/tocstore/science/whole-genome-sequencing/">Whole genome sequencing</a>' +
+      '<a href="/tocstore/science/multiomics/">Multiomics</a>' +
+      '<a href="/tocstore/science/systems-biology/">Systems biology</a>' +
+      '<a href="/tocstore/science/our-research/">Our research</a>' +
+      '<a href="/tocstore/app/">The App</a>' +
+      '<a href="/tocstore/app/#longevity-ai">Longevity AI</a>' +
+      '<a href="/tocstore/hub/">Longevity Hub</a>' +
+      '<a href="/tocstore/hub/podcast/">The Longevity Seat</a>' +
+      '<a href="/tocstore/hub/gut-guide/">The gut health guide</a>' +
+      '<a href="/tocstore/app/dashboard/">Your dashboard</a>' +
+      '<a href="/tocstore/app/results-and-reports/">Results and reports</a>' +
+      '<a href="/tocstore/app/trends/">Trends over time</a>' +
+      '<a href="/tocstore/app/book-a-session/">Book a session</a></div>' +
       '<div class="col"><div class="col-t">Company</div>' +
-      '<a href="/phenome-store/about/">About</a>' +
-      '<a href="/phenome-store/careers/">Careers</a>' +
-      '<a href="/phenome-store/press/">Press</a>' +
-      '<a href="/phenome-store/clinic/">The Clinic</a>' +
-      '<a href="/phenome-store/clinic/what-to-expect/">What to expect</a>' +
-      '<a href="/phenome-store/clinic/book/">Register your interest</a>' +
-      '<a href="/phenome-store/contact/">Contact</a>' +
-      '<a href="/phenome-store/testing/how-it-works/">How testing works</a>' +
-      '<a href="/phenome-store/testing/compare/">Compare tests</a>' +
-      '<a href="/phenome-store/devices/ring/compare-materials/">Compare ring materials</a>' +
-      '<a href="/phenome-store/devices/ring/how-it-works/">How the Ring works</a>' +
-      '<a href="/phenome-store/hub/search/">Search the Hub</a></div>' +
+      '<a href="/tocstore/about/">About</a>' +
+      '<a href="/tocstore/careers/">Careers</a>' +
+      '<a href="/tocstore/press/">Press</a>' +
+      '<a href="/tocstore/clinic/">The Clinic</a>' +
+      '<a href="/tocstore/clinic/what-to-expect/">What to expect</a>' +
+      '<a href="/tocstore/clinic/book/">Register your interest</a>' +
+      '<a href="/tocstore/contact/">Contact</a>' +
+      '<a href="/tocstore/testing/how-it-works/">How testing works</a>' +
+      '<a href="/tocstore/testing/compare/">Compare tests</a>' +
+      '<a href="/tocstore/devices/ring/compare-materials/">Compare ring materials</a>' +
+      '<a href="/tocstore/devices/ring/how-it-works/">How the Ring works</a>' +
+      '<a href="/tocstore/hub/search/">Search the Hub</a></div>' +
       '<div class="col"><div class="col-t">Support</div>' +
-      '<a href="/phenome-store/help/">FAQ</a>' +
-      '<a href="/phenome-store/account/">Your account</a>' +
-      '<a href="/phenome-store/account/orders/">Track an order</a>' +
-      '<a href="/phenome-store/account/activate/">Activate a kit</a>' +
-      '<a href="/phenome-store/legal/privacy.html">Privacy and data</a>' +
-      '<a href="/phenome-store/legal/terms.html">Terms</a><a href="/phenome-store/sitemap/">Sitemap</a></div>' +
+      '<a href="/tocstore/help/">FAQ</a>' +
+      '<a href="/tocstore/account/">Your account</a>' +
+      '<a href="/tocstore/account/orders/">Track an order</a>' +
+      '<a href="/tocstore/account/activate/">Activate a kit</a>' +
+      '<a href="/tocstore/legal/privacy.html">Privacy and data</a>' +
+      '<a href="/tocstore/legal/terms.html">Terms</a><a href="/tocstore/sitemap/">Sitemap</a></div>' +
       '</div>' +
       '<div class="trust" style="margin-top:40px;border-bottom:0">' +
       '<span><b>ISO 15189</b> accredited lab</span>' +
@@ -1562,69 +1562,69 @@
      extras below are the pages the bar has no panel for — the Hub, the account, the
      legal pages — and they are the only rows written by hand. */
   var PH_FIND_EXTRA = [
-    { label: 'Shop all', href: '/phenome-store/store/', section: 'Store',
+    { label: 'Shop all', href: '/tocstore/store/', section: 'Store',
       keys: 'store shop buy everything products' },
-    { label: 'Longevity Hub', href: '/phenome-store/hub/', section: 'Explore',
+    { label: 'Longevity Hub', href: '/tocstore/hub/', section: 'Explore',
       keys: 'articles guides reading blog' },
-    { label: 'The Longevity Seat', href: '/phenome-store/hub/podcast/', section: 'Explore',
+    { label: 'The Longevity Seat', href: '/tocstore/hub/podcast/', section: 'Explore',
       keys: 'podcast episodes listen audio' },
-    { label: 'The gut health guide', href: '/phenome-store/hub/gut-guide/', section: 'Explore',
+    { label: 'The gut health guide', href: '/tocstore/hub/gut-guide/', section: 'Explore',
       keys: 'bloating digestion ibs microbiome guide' },
-    { label: 'Search the Hub', href: '/phenome-store/hub/search/', section: 'Explore',
+    { label: 'Search the Hub', href: '/tocstore/hub/search/', section: 'Explore',
       keys: 'find results' },
-    { label: 'Your account', href: '/phenome-store/account/', section: 'Support',
+    { label: 'Your account', href: '/tocstore/account/', section: 'Support',
       keys: 'sign in log in login profile' },
-    { label: 'Track an order', href: '/phenome-store/account/orders/', section: 'Support',
+    { label: 'Track an order', href: '/tocstore/account/orders/', section: 'Support',
       keys: 'delivery shipping dispatch parcel where is my order' },
-    { label: 'Activate a kit', href: '/phenome-store/account/activate/', section: 'Support',
+    { label: 'Activate a kit', href: '/tocstore/account/activate/', section: 'Support',
       keys: 'register barcode sample code' },
-    { label: 'Your bag', href: '/phenome-store/store/cart/', section: 'Store',
+    { label: 'Your bag', href: '/tocstore/store/cart/', section: 'Store',
       keys: 'basket cart checkout' },
-    { label: 'Checkout', href: '/phenome-store/store/checkout/', section: 'Store',
+    { label: 'Checkout', href: '/tocstore/store/checkout/', section: 'Store',
       keys: 'pay payment order' },
-    { label: 'The App', href: '/phenome-store/app/', section: 'Explore',
+    { label: 'The App', href: '/tocstore/app/', section: 'Explore',
       keys: 'iphone android dashboard longevity ai' },
-    { label: 'Your dashboard', href: '/phenome-store/app/dashboard/', section: 'Explore',
+    { label: 'Your dashboard', href: '/tocstore/app/dashboard/', section: 'Explore',
       keys: 'app scores home' },
-    { label: 'Results and reports', href: '/phenome-store/app/results-and-reports/', section: 'Explore',
+    { label: 'Results and reports', href: '/tocstore/app/results-and-reports/', section: 'Explore',
       keys: 'pdf report omics portfolio findings' },
-    { label: 'Trends over time', href: '/phenome-store/app/trends/', section: 'Explore',
+    { label: 'Trends over time', href: '/tocstore/app/trends/', section: 'Explore',
       keys: 'app history charts progress' },
-    { label: 'Book a session', href: '/phenome-store/app/book-a-session/', section: 'Explore',
+    { label: 'Book a session', href: '/tocstore/app/book-a-session/', section: 'Explore',
       keys: 'genetic counsellor appointment call consultation' },
-    { label: 'The Clinic', href: '/phenome-store/clinic/', section: 'Company',
+    { label: 'The Clinic', href: '/tocstore/clinic/', section: 'Company',
       keys: 'london in person visit' },
-    { label: 'What to expect at the clinic', href: '/phenome-store/clinic/what-to-expect/', section: 'Company',
+    { label: 'What to expect at the clinic', href: '/tocstore/clinic/what-to-expect/', section: 'Company',
       keys: 'visit appointment first time' },
-    { label: 'Register your interest', href: '/phenome-store/clinic/book/', section: 'Company',
+    { label: 'Register your interest', href: '/tocstore/clinic/book/', section: 'Company',
       keys: 'clinic waiting list enquire' },
-    { label: 'Science', href: '/phenome-store/science/', section: 'Explore',
+    { label: 'Science', href: '/tocstore/science/', section: 'Explore',
       keys: 'research evidence method' },
-    { label: 'Whole genome sequencing', href: '/phenome-store/science/whole-genome-sequencing/', section: 'Explore',
+    { label: 'Whole genome sequencing', href: '/tocstore/science/whole-genome-sequencing/', section: 'Explore',
       keys: 'wgs dna genome illumina' },
-    { label: 'Multiomics', href: '/phenome-store/science/multiomics/', section: 'Explore',
+    { label: 'Multiomics', href: '/tocstore/science/multiomics/', section: 'Explore',
       keys: 'layers proteome transcriptome' },
-    { label: 'Systems biology', href: '/phenome-store/science/systems-biology/', section: 'Explore',
+    { label: 'Systems biology', href: '/tocstore/science/systems-biology/', section: 'Explore',
       keys: 'networks pathways' },
-    { label: 'Our research', href: '/phenome-store/science/our-research/', section: 'Explore',
+    { label: 'Our research', href: '/tocstore/science/our-research/', section: 'Explore',
       keys: 'papers publications studies' },
-    { label: 'About', href: '/phenome-store/about/', section: 'Company',
+    { label: 'About', href: '/tocstore/about/', section: 'Company',
       keys: 'who we are company story lab' },
-    { label: 'Careers', href: '/phenome-store/careers/', section: 'Company',
+    { label: 'Careers', href: '/tocstore/careers/', section: 'Company',
       keys: 'jobs hiring roles work with us' },
-    { label: 'Press', href: '/phenome-store/press/', section: 'Company',
+    { label: 'Press', href: '/tocstore/press/', section: 'Company',
       keys: 'media news coverage' },
-    { label: 'FAQ', href: '/phenome-store/help/', section: 'Support',
+    { label: 'FAQ', href: '/tocstore/help/', section: 'Support',
       keys: 'faq questions answers help centre center kit activate results refund shipping' },
-    { label: 'Contact us', href: '/phenome-store/contact/', section: 'Support',
+    { label: 'Contact us', href: '/tocstore/contact/', section: 'Support',
       keys: 'help support email phone customer service' },
-    { label: 'Privacy and data', href: '/phenome-store/legal/privacy.html', section: 'Support',
+    { label: 'Privacy and data', href: '/tocstore/legal/privacy.html', section: 'Support',
       keys: 'gdpr encryption deletion consent' },
-    { label: 'Terms', href: '/phenome-store/legal/terms.html', section: 'Support',
+    { label: 'Terms', href: '/tocstore/legal/terms.html', section: 'Support',
       keys: 'legal conditions' },
-    { label: 'Sitemap', href: '/phenome-store/sitemap/', section: 'Support',
+    { label: 'Sitemap', href: '/tocstore/sitemap/', section: 'Support',
       keys: 'all pages index' },
-    { label: 'Design system', href: '/phenome-store/design-system/', section: 'Company',
+    { label: 'Design system', href: '/tocstore/design-system/', section: 'Company',
       keys: 'tokens type colour components' }
   ];
 
@@ -1634,22 +1634,22 @@
      nothing a reader sees: a row is matched on them and still listed under its own
      signed-off name. Keyed by href, so a page that moves takes its words with it. */
   var PH_FIND_KEYS = {
-    '/phenome-store/store/phenometech-ring/':
+    '/tocstore/store/phenometech-ring/':
       'sleep heart rate hrv recovery readiness wearable titanium ceramic finger',
-    '/phenome-store/devices/ring/':
+    '/tocstore/devices/ring/':
       'sleep heart rate hrv recovery readiness wearable titanium ceramic finger',
-    '/phenome-store/devices/band/': 'wearable wrist steps screen sleep activity',
-    '/phenome-store/testing/gut-microbiome/':
+    '/tocstore/devices/band/': 'wearable wrist steps screen sleep activity',
+    '/tocstore/testing/gut-microbiome/':
       'bloating digestion ibs stool bacteria diversity fibre',
-    '/phenome-store/testing/oral-microbiome/': 'mouth saliva gums teeth breath',
-    '/phenome-store/testing/comprehensive-genomic/':
+    '/tocstore/testing/oral-microbiome/': 'mouth saliva gums teeth breath',
+    '/tocstore/testing/comprehensive-genomic/':
       'dna genome sequencing wgs variants risk panels',
-    '/phenome-store/testing/carrier-screening/':
+    '/tocstore/testing/carrier-screening/':
       'family planning inherited recessive partner pregnancy',
-    '/phenome-store/testing/newborn-screening/': 'baby infant newborn paediatric',
-    '/phenome-store/testing/sports-performance/':
+    '/tocstore/testing/newborn-screening/': 'baby infant newborn paediatric',
+    '/tocstore/testing/sports-performance/':
       'training athlete fitness recovery endurance injury',
-    '/phenome-store/store/supplements/': 'nad capsules powder vitamins collagen'
+    '/tocstore/store/supplements/': 'nad capsules powder vitamins collagen'
   };
 
   /* Six, because seven starts to read as a menu rather than a shortcut. Each one names
@@ -1776,12 +1776,12 @@
   }
 
   var PH_FIND_QUICK = [
-    { href: '/phenome-store/store/', label: 'Shop all' },
-    { href: '/phenome-store/store/phenometech-ring/', label: 'PhenomeTech Ring' },
-    { href: '/phenome-store/testing/compare/', label: 'Compare tests' },
-    { href: '/phenome-store/hub/', label: 'Longevity Hub' },
-    { href: '/phenome-store/account/orders/', label: 'Track an order' },
-    { href: '/phenome-store/account/activate/', label: 'Activate a kit' }
+    { href: '/tocstore/store/', label: 'Shop all' },
+    { href: '/tocstore/store/phenometech-ring/', label: 'PhenomeTech Ring' },
+    { href: '/tocstore/testing/compare/', label: 'Compare tests' },
+    { href: '/tocstore/hub/', label: 'Longevity Hub' },
+    { href: '/tocstore/account/orders/', label: 'Track an order' },
+    { href: '/tocstore/account/activate/', label: 'Activate a kit' }
   ];
 
   function searchKit() {

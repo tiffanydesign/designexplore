@@ -741,6 +741,6 @@
   .sci-js .sci .sci-hero-card, .sci-js .sci .sci-hero-top > *, .sci-js .sci .sci-hero-foot > * { animation: none; }
   .sci-js .sci .sci-cmp .sci-cmp-row { opacity: 1; translate: 0 0; transition: none; }
   .sci .sci-cmp-film { display: none; }
-  .sci .sci-cmp-card { background-image: url("/phenome-store/assets/video/hero-aurora.webp"); background-size: cover; }
+  .sci .sci-cmp-card { background-image: url("/tocstore/assets/video/hero-aurora.webp"); background-size: cover; }
   .sci .sci-acc-track { transform: none; }
 }

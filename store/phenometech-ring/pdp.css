@@ -1144,7 +1144,7 @@ html.pdp-lb-open, body.pdp-lb-open { overflow: hidden; }
     display: block;
     aspect-ratio: 4 / 3;
     border-radius: var(--ph-r18);
-    background: url("/phenome-store/assets/pages/ring_worn_run.webp") 40% 50% / cover no-repeat;
+    background: url("/tocstore/assets/pages/ring_worn_run.webp") 40% 50% / cover no-repeat;
   }
   .pdp .pdp-sig-glass {
     background: rgba(255, 255, 255, .07);

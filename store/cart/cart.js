@@ -18,7 +18,7 @@
   if (window.PhenomeCart) return;
 
   var self = document.currentScript;
-  var BASE = self ? self.src.replace(/\/store\/cart\/cart\.js.*$/, '').replace(/^[a-z]+:\/\/[^/]*/i, '') : '/phenome-store';
+  var BASE = self ? self.src.replace(/\/store\/cart\/cart\.js.*$/, '').replace(/^[a-z]+:\/\/[^/]*/i, '') : '/tocstore';
   var KEY = 'phenome.cart.v1';
   var PROMO = { code: 'Welcome10', rate: 0.10 };
   /* RETURN: the page Checkout was opened from, so checkout's back control can

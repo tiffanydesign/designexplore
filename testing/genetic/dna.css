@@ -673,8 +673,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .dna .dna-close-film, .dna .dna-hero-film { display: none; }
-  .dna .dna-hero-card { background-image: url("/phenome-store/assets/video/hero-aurora.webp"); background-size: cover; }
-  .dna .dna-close-card { background-image: url("/phenome-store/assets/video/hero-aurora.webp"); background-size: cover; }
+  .dna .dna-hero-card { background-image: url("/tocstore/assets/video/hero-aurora.webp"); background-size: cover; }
+  .dna .dna-close-card { background-image: url("/tocstore/assets/video/hero-aurora.webp"); background-size: cover; }
   .dna-js .dna .dna-up,
   .dna-js .dna .dna-hero-head > *,
   .dna-js .dna .dna-hero-plate,

@@ -30,13 +30,13 @@
 (function () {
   'use strict';
 
-  var RING = '/phenome-store/assets/ring/fin/';
-  var BAND = '/phenome-store/assets/band/';
+  var RING = '/tocstore/assets/ring/fin/';
+  var BAND = '/tocstore/assets/band/';
 
   /* Where Buy goes, shared by the three ring materials and by the two Band
      straps, so it is written once. */
-  var RING_LINKS = { buy: '/phenome-store/store/phenometech-ring/' };
-  var BAND_LINKS = { buy: '/phenome-store/devices/band/' };
+  var RING_LINKS = { buy: '/tocstore/store/phenometech-ring/' };
+  var BAND_LINKS = { buy: '/tocstore/devices/band/' };
 
   /* The sentence carried identically by the three ring materials, and the one
      carried identically by the two straps. */
@@ -194,7 +194,7 @@
      the answer's own words, so three different answers on one line show
      three different pictures. index.html carries the same icons for the
      opening three; an answer missing here is simply set without one. */
-  var ICON_SPRITE = '/phenome-store/assets/icons/compare.svg#';
+  var ICON_SPRITE = '/tocstore/assets/icons/compare.svg#';
   var ICONS = {
     'High density zirconia ceramic': 'ring-ceramic',
     'Grade 5 aerospace titanium': 'ring-titanium',

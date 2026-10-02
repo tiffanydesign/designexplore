@@ -22,7 +22,7 @@
   var app = document.querySelector('[data-hc]');
   if (!H || !app) return;
 
-  var BASE = '/phenome-store';
+  var BASE = '/tocstore';
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 

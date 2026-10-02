@@ -288,7 +288,7 @@
     /* The other supplement pages on this design name their own thumbnail and
        pack on <body>; NAD+ carries neither and keeps its own. */
     var pack = doc.body.getAttribute('data-dock-meta') || '30 sachets';
-    thumb.src = doc.body.getAttribute('data-dock-thumb') || '/phenome-store/assets/shop/supp-nad.webp';
+    thumb.src = doc.body.getAttribute('data-dock-thumb') || '/tocstore/assets/shop/supp-nad.webp';
     var txt = doc.createElement('span');
     txt.className = 'ph-bar-txt';
     var meta = doc.createElement('span');

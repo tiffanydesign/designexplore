@@ -246,7 +246,7 @@
     /* The other testing pages load this script too, and name their own
        thumbnail and meta line on <body>. */
     var body = doc.body;
-    thumb.src = body.getAttribute('data-dock-thumb') || '/phenome-store/assets/shop/test-genomic.webp';
+    thumb.src = body.getAttribute('data-dock-thumb') || '/tocstore/assets/shop/test-genomic.webp';
     var txt = doc.createElement('span');
     txt.className = 'ph-bar-txt';
     var meta = doc.createElement('span');
