@@ -368,7 +368,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .hc-more-film { display: none; }
-  .hc-more-card { background-image: url("/tocstore/assets/video/hero-aurora.webp"); background-size: cover; }
+  .hc-more-card { background-image: url("/designexplore/assets/video/hero-aurora.webp"); background-size: cover; }
 }
 
 /* ---------------------------------------------------------------------------

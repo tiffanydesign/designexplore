@@ -757,7 +757,7 @@
 @media (prefers-reduced-motion: reduce) {
   .cgp .cg-ring::before, .cgp .cg-ring-list, .cgp .cg-ring-list button { animation: none; }
   .cgp .cg-end-film { display: none; }
-  .cgp .cg-end-card { background-image: url("/tocstore/assets/video/hero-aurora.webp"); background-size: cover; }
+  .cgp .cg-end-card { background-image: url("/designexplore/assets/video/hero-aurora.webp"); background-size: cover; }
   .cg-rel-card img, .cg-rel-copy, .cg-rel-d { transition: none; }
 }
 

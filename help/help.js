@@ -22,7 +22,7 @@
   var app = document.querySelector('[data-hc]');
   if (!H || !app) return;
 
-  var BASE = '/tocstore';
+  var BASE = '/designexplore';
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 

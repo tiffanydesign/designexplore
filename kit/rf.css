@@ -376,6 +376,6 @@
 @media (prefers-reduced-motion: reduce) {
   .rf .rf-hero-media img { animation: none; }
   .rf .rf-end-film { display: none; }
-  .rf .rf-end-card { background: url("/tocstore/assets/video/hero-aurora.webp") center / cover; }
+  .rf .rf-end-card { background: url("/designexplore/assets/video/hero-aurora.webp") center / cover; }
   .rf .rf-card, .rf .rf-card img { transition: none; }
 }

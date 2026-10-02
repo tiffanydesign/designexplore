@@ -12,7 +12,7 @@
   var root = document.querySelector('[data-qz]');
   if (!root) return;
 
-  var BASE = '/tocstore';
+  var BASE = '/designexplore';
   var RM = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   var P = {

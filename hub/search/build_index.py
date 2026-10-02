@@ -13,7 +13,7 @@ import os
 import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-BASE = '/tocstore/'
+BASE = '/designexplore/'
 SKIP = ('design-system/', 'quiz/', 'find-your-test/', 'store/checkout/', 'hub/search/', 'supplements/index.html')
 
 # (path prefix, filter tags, meta label). First match wins.

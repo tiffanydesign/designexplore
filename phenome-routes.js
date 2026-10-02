@@ -103,7 +103,7 @@ var ROUTES = [
 ];
 
   /* The base the site is served from, taken from THIS script's own src rather
-     than assumed. The mirror lives at /tocstore on project pages and at /
+     than assumed. The mirror lives at /designexplore on project pages and at /
      on a real domain; reading it back means the dock follows the deployment
      instead of hard-typing one of them. */
   var self = document.currentScript;
