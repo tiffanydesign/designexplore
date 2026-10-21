@@ -512,6 +512,9 @@
       /* No "Find your test" here. It was ours, not the design's; Can asked twice for
          the frame's own header and overruled the argument for keeping it. */
       clinicHTML +
+      /* Clinic, 2026-10-21 by request: a plain nav item left of the search glass, out to the
+         Phenome Clinics site (its own Pages project, so an absolute URL). */
+      '<div class="ph-item"><a class="ph-trigger ph-clinic-link" href="https://tiffanydesign.github.io/phenome-clinics/#home">Clinic</a></div>' +
       /* Search and cart are in the design and Can asked for them explicitly after
          being told neither function exists yet: "onları gene de ekle, onları
          developer halleder." They are NOT href="#" — each points at the real page
